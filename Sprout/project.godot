@@ -465,12 +465,28 @@ _global_script_class_icons={
 [application]
 
 config/name="Sprout"
+run/main_scene="res://initial_scene.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
+
+[dialogic]
+
+editor/character_preview_mode=0
+editor/current_editor=&"Timeline Editor"
+editor/current_resources={}
+editor/last_resources=[]
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
@@ -496,3 +512,7 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
